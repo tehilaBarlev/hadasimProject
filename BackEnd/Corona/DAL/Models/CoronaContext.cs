@@ -54,6 +54,11 @@ namespace DAL.Models
                     .IsUnicode(false)
                     .HasColumnName("firstName");
 
+                entity.Property(e => e.Img)
+                    .HasMaxLength(500)
+                    .IsUnicode(false)
+                    .HasColumnName("img");
+
                 entity.Property(e => e.LastName)
                     .HasMaxLength(20)
                     .IsUnicode(false)

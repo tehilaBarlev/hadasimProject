@@ -2020,11 +2020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\בעזה\\2\\Corona\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\בעזה\\project\\BackEnd\\Corona\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "E:\\בעזה\\2\\Corona\\DAL\\DAL.csproj",
+      "projectPath": "E:\\בעזה\\project\\BackEnd\\Corona\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\בעזה\\2\\Corona\\DAL\\obj\\",
+      "outputPath": "E:\\בעזה\\project\\BackEnd\\Corona\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

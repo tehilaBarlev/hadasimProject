@@ -8,14 +8,10 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import TextField from '@mui/material/TextField';
 import AddIcon from '@mui/icons-material/Add';
+import CardProfile from './Avatar'
 function Clients() {
     const [open, setOpen] = useState(false);
-    const [open2, setOpen2] = useState(false);
     const [dis1, setDis1] = useState(false);
-    const [dis2, setDis2] = useState(false);
-    const [dis3, setDis3] = useState(false);
-    //const [dataAdd, setDataAdd] = useState(null);
-    const [dataDelete, setDataDelete] = useState(null);
     const [clients, setClients] = useState([]);
     const clientService = new ClientService();
     const clientEmpty = {
@@ -28,6 +24,7 @@ function Clients() {
         birthDate: new Date(),
         phoneNumber: "",
         mobilephoneNumber: "",
+        img:""
     }
 
     const [client, setClient] = useState(clientEmpty);
@@ -46,10 +43,8 @@ function Clients() {
         else {
             setDis1(false);
             await clientService.getClient(client.id).then(res => {
-                //setDataAdd(res);
                 if (res === "") {
                     clientService.addClient(client);
-                    console.log("null!!!");
                     clientService.getAllClient().then(res => setClients(res));
                     setClient(clientEmpty);
                     handleClose();
@@ -71,7 +66,12 @@ function Clients() {
 
     useEffect(() => {
         clientService.getAllClient().then(res => setClients(res));
+        console.log(clients);
     }, []);
+    // useEffect(() => {
+    //     clientService.getAllClient().then(res => setClients(res));
+    //     console.log(clients);
+    // }, [clients]);
 
     const onInputChange = (e, name) => {
         const val = (e.target && e.target.value) || '';
@@ -82,7 +82,7 @@ function Clients() {
 
     return (
         <>
-            <Button variant="outlined" onClick={handleClickOpen}>להוספת חבר<AddIcon/></Button>
+            <Button variant="outlined" onClick={handleClickOpen}>להוספת חבר<AddIcon /></Button>
             <br></br><br></br>
             <TableClients data={clients} setOpenEdit={handleClickOpen} setClient={setClient} setEdit={setEdit} />
             <Dialog open={open}
@@ -92,8 +92,8 @@ function Clients() {
             </DialogTitle> :
                     <DialogTitle style={{ cursor: 'move' }} id="draggable-dialog-title">הוספת חבר</DialogTitle>}
                 <DialogContent>
-                    <form>
-                        <br />
+                    <form> 
+                        <CardProfile setClient={setClient} client={client}/><br/><br />
                         <TextField error={client.id === "" || client.id.length != 9}
                             id="id" label="ת.ז" value={client.id} onChange={(e) => onInputChange(e, 'id')} variant="filled" />
                         {dis1 ? (<><div>הת.ז קיימת</div></>) : ''}<br /><br />

@@ -20,8 +20,13 @@ namespace DAL
 
         public void DeleteVaccination(string id)
         {
-            db.Remove(db.TblVaccinations.FirstOrDefault(x => x.Id == id));
-            db.SaveChanges();
+            List<TblVaccination> listOfDelete = GetVaccination(id);
+            foreach (TblVaccination c in listOfDelete)
+            {
+                db.Remove(c);
+                db.SaveChanges();
+            }  
+
         }
 
         public List<TblVaccination> GetAllVaccinations()

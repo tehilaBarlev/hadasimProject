@@ -12,3 +12,17 @@ E:\בעזה\2\Corona\DAL\obj\Debug\net6.0\refint\DAL.dll
 E:\בעזה\2\Corona\DAL\obj\Debug\net6.0\DAL.pdb
 E:\בעזה\2\Corona\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
 E:\בעזה\2\Corona\DAL\obj\Debug\net6.0\ref\DAL.dll
+E:\בעזה\project\BackEnd\Corona\DAL\bin\Debug\net6.0\DAL.deps.json
+E:\בעזה\project\BackEnd\Corona\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+E:\בעזה\project\BackEnd\Corona\DAL\bin\Debug\net6.0\DAL.dll
+E:\בעזה\project\BackEnd\Corona\DAL\bin\Debug\net6.0\DAL.pdb
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.dll
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\refint\DAL.dll
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.pdb
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+E:\בעזה\project\BackEnd\Corona\DAL\obj\Debug\net6.0\ref\DAL.dll

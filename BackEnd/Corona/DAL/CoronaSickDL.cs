@@ -30,9 +30,9 @@ namespace DAL
             return db.TblCoronaSicks.ToList();
         }
 
-        public TblCoronaSick GetCoronaSick(string id)
+        public List<TblCoronaSick> GetCoronaSick(string id)
         {
-            return db.TblCoronaSicks.FirstOrDefault(x => x.Id == id);
+            return db.TblCoronaSicks.Where(x => x.Id == id).ToList();
         }
 
         public void UpdateCoronaSick(TblCoronaSick c)

@@ -7,13 +7,13 @@ export default class VaccinationService {
     async getVaccination(id){
         return await api.get(`/Vaccination/getVaccination?id=${id}`).then(res =>res.data);
     }
-    addVaccination(newVaccination){
-        return api.post('/Vaccination',newVaccination).then(res => res.data);
+    async addVaccination(newVaccination){
+        return await api.post('/Vaccination',newVaccination).then();
     }
     updateVaccination(newVaccination){
         return api.put('/Vaccination',newVaccination).then(res => res.data);
     }
-    deleteVaccination(id){
-        return api.delete('/Vaccination',id).then(res => res.data);
+    async deleteVaccination(id){
+        return await api.delete(`/Vaccination?id=${id}`).then(res => res.data);
     }
 }

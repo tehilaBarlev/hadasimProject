@@ -22,7 +22,7 @@ namespace Corona.Controllers
                 return cb.GetAllCoronaSicks();
             }
             [HttpGet("GetCoronaSick")]
-            public ActionResult<TblCoronaSick> GetCoronaSick(string id)
+            public ActionResult<List<TblCoronaSick>> GetCoronaSick(string id)
             {
                 return cb.GetCoronaSick(id);
             }

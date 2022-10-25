@@ -1,10 +1,11 @@
 import React from 'react';
 import PeopleIcon from '@mui/icons-material/People';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@mui/material/Button';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-
+import Box from '@mui/material/Box';
+import EqualizerIcon from '@mui/icons-material/Equalizer';
+import ChartCorona from './components/chart'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -29,20 +30,24 @@ function App() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   }
-  const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   return (
-    <div className="App">
+    <div className="App" className="divNav">
       <Router>
-        <ul class="ulNav">
-          <Link id="linkInDiv" to="/"><BottomNavigationAction label="Recents" value="recents" />כל החברים</Link>
-          <Link id="linkInDiv" to="/grafs"><BottomNavigationAction label="Nearby" value="nearby" />גרפים</Link>
-        </ul>
+        <Box sx={{ width: 500 }}>
+          <BottomNavigation
+            showLabels
+            value={value}
+          >
+            <Link id="linkInDiv" to="/"><BottomNavigationAction label="כל החברים" icon={<PeopleIcon/>}/></Link>
+            <Link id="linkInDiv" to="/ChartCorona"><BottomNavigationAction label="גרפים" icon={<EqualizerIcon/>} /></Link>
+          </BottomNavigation>
+        </Box>
         <br /><br />
         <Switch>
-          <Route path="/grafs" exact>
-            <span>בהמשך בעז"ה אציג כאן גרפים של סיכום</span>
+          <Route path="/ChartCorona" exact>
+            <ChartCorona/>
           </Route>
           <Route path="/" exact>
             <Clients />

@@ -14,5 +14,6 @@ namespace DAL.Models
         public DateTime BirthDate { get; set; }
         public string? PhoneNumber { get; set; }
         public string MobilephoneNumber { get; set; } = null!;
+        public string? Img { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UZBOQTcV6Z0QcF8U8yA8dz76xUSo6adNVPAhuKYITKFTQAI1rnyd+psHWMOsMQpPa8wuepecE+w6vvFw5yv6Qw==",
+  "dgSpecHash": "vUiNQpD9fzTWLeiAf3fteDEOjmlmp7NU8EQ7v1VxVtLSDO2SKy/QDkePOahEuzANRjL0JVy2XViHLPkpSLY+lQ==",
   "success": true,
-  "projectFilePath": "E:\\בעזה\\2\\Corona\\BL\\BL.csproj",
+  "projectFilePath": "E:\\בעזה\\project\\BackEnd\\Corona\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

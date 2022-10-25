@@ -28,7 +28,7 @@ namespace BL
             return CoronaSickDL.GetAllCoronaSicks();
         }
 
-        public TblCoronaSick GetCoronaSick(string id)
+        public List<TblCoronaSick> GetCoronaSick(string id)
         {
             return CoronaSickDL.GetCoronaSick(id);
         }

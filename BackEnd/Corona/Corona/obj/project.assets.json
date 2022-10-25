@@ -2167,11 +2167,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\בעזה\\2\\Corona\\Corona\\Corona.csproj",
+      "projectUniqueName": "E:\\בעזה\\project\\BackEnd\\Corona\\Corona\\Corona.csproj",
       "projectName": "Corona",
-      "projectPath": "E:\\בעזה\\2\\Corona\\Corona\\Corona.csproj",
+      "projectPath": "E:\\בעזה\\project\\BackEnd\\Corona\\Corona\\Corona.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\בעזה\\2\\Corona\\Corona\\obj\\",
+      "outputPath": "E:\\בעזה\\project\\BackEnd\\Corona\\Corona\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2191,11 +2191,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\בעזה\\2\\Corona\\BL\\BL.csproj": {
-              "projectPath": "E:\\בעזה\\2\\Corona\\BL\\BL.csproj"
+            "E:\\בעזה\\project\\BackEnd\\Corona\\BL\\BL.csproj": {
+              "projectPath": "E:\\בעזה\\project\\BackEnd\\Corona\\BL\\BL.csproj"
             },
-            "E:\\בעזה\\2\\Corona\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\בעזה\\2\\Corona\\DAL\\DAL.csproj"
+            "E:\\בעזה\\project\\BackEnd\\Corona\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\בעזה\\project\\BackEnd\\Corona\\DAL\\DAL.csproj"
             }
           }
         }

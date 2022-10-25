@@ -52,6 +52,7 @@ namespace DAL
                 newclient.BirthDate = c.BirthDate;
                 newclient.PhoneNumber = c.PhoneNumber;
                 newclient.MobilephoneNumber = c.MobilephoneNumber;
+                newclient.Img = c.Img;
                 db.SaveChanges();
             }
         }
